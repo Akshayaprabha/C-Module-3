@@ -19,9 +19,25 @@ To write a program to generate the Fibonacci series for `n` numbers using a func
    - Return 0 to indicate successful program termination.
 
 ## 🧾Program
-Add Code Here
+```
+#include <stdio.h>
+void fib() {
+    int n, i;
+    int a = 0, b = 1, c;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    if(n >= 1) {
+        printf("%d ", a);
+    }
+    if(n >= 2) {
+        printf("%d ", b);
+    }
 
-## Sample Output
-
-## Result
+    for(i = 3; i <= n; i++) {
+        c = a + b;
+        printf("%d ", c);
+        a = b;
+        b = c;
+    }
+}
 
